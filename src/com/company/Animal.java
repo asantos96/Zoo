@@ -12,6 +12,6 @@ public class Animal {
         this.age = age;
     }
     public void printAnimalDetails(){
-        System.out.println("Species: " + species + "." + "Color: " + color + "Age: " + age);
+        System.out.println("Species: " + species + ". " + "Color: " + color + "Age: " + age);
     }
 }

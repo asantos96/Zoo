@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -21,6 +24,30 @@ public class Main {
         // they are in.
         //Super Bonus: Create a menu option for zoo employees to add animals to enclosures and add services to
         // guest service building
+
+        Cheetah firstCheetah = new Cheetah ("Acinonyx jubatus " , "Gold " , 1,
+                50.87, "Spot ");
+        Cheetah secondCheetah = new Cheetah ("Acinonyx jubatus " , "Gold " ,7,
+                70.43, "Bob ");
+
+        Lion firstLion = new Lion ("Panthera leo " , "Yellow " , 3, true, "Male ");
+        firstLion.printAnimalDetails();
+
+        List<Animal> threeCats = new ArrayList<>();
+        threeCats.add(firstCheetah);
+        threeCats.add(secondCheetah);
+        threeCats.add(firstLion);
+
+
+        AnimalEnclosure catHouse = new AnimalEnclosure();
+        catHouse.addAnimals(threeCats);
+
+        Lion secondLion = new Lion("Panthera leo ", "Yellow", 1, false, "female");
+        catHouse.addAnimal(secondLion);
+
+
+        catHouse.printAnimalEnclosure();
+
 
     }
 }
