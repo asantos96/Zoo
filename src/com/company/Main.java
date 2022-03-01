@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// We Programmed A Zoo
+	    // We Programmed A Zoo
         //Create a new project named Zoo
         //Create a class named Animal and Building and give each some basic properties
         //Create several classes for specific types of animals in the Zoo
